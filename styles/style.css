@@ -1,0 +1,282 @@
+* {
+ box-sizing: border-box;
+ font-family: 'Assistant', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+ }
+body{
+	width: 100%;
+	margin: 0%;
+	background-color: #008891;
+
+}
+header{
+	background-color: #4B3939;
+	color: white;
+	display: flex; border-right: 
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 100%;
+}
+
+footer{
+	color: white;
+	background-color: #4B3939;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+	z-index: 1;
+}
+
+.productos{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.menu{
+	color: white;
+	padding: 15px;
+	text-decoration: none;
+	width: 100%;
+}
+
+.playa_logo{
+	height: 60px;
+	width: 70px;
+	padding-left: 15px;
+}
+.video{
+	float: right;
+	border: 3px solid #008891;
+	border-radius: 15px;
+}
+.h_ictp{
+	text-align: center;
+	width: 25%;
+}
+
+ .principal-container {
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+	 background-color:#008891;
+	 display: flex;
+	 flex-direction: column; 
+	 width: 100%;
+	 z-index: 1;
+	 align-items: center;
+ }
+
+ .img-principal{
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+ .descripcion_principal{
+ 	display: flex;
+ 	justify-content: center;
+ 	flex-direction: column;
+ 	position: absolute;
+ 	text-align: center;
+ 	color: white;
+ 	top: 20%;
+ 	left: 20%;
+ 	padding: 10px;
+ }
+ .principal_playas{
+ 	width: 100%;
+ 	height: 40%;
+ 	background-color: #00587A;
+ 	align-content:center;
+ 	float: left;
+ 	border-radius: 30px;
+ 	padding: 20px 20px 20px 20px;
+ 	margin-bottom: 10px;
+ 	margin-top: 10px: 
+
+ }
+
+ .cont_azul{
+ 	float: left;
+ 	top: 5px;
+ 	left: 5px;
+ 	height: 75%;
+ 	width: 50%; 
+ 	color: white;
+ 	background-color: #008891;
+ 	text-align: justify;
+ 	position: relative;
+ 	z-index: 1;
+ 	border-radius: 15px;
+ 	padding: 10px 10px 10px 10px;
+}
+
+ .cont_azul_2{
+ 	float: left;
+ 	top: 5px;
+ 	left: 5px;
+ 	height: 75%;
+ 	width: 100%; 
+ 	color: white;
+ 	background-color: #008891;
+ 	text-align: justify;
+ 	position: relative;
+ 	z-index: 1;
+ 	border-radius: 15px;
+ 	padding: 5px;
+}
+
+.img_cont_azul{
+	top: 5px;
+ 	left: 600px;
+ 	height: 17%;
+ 	width: 25%; 
+ 	border-radius: 15px;
+ 	float: right;
+ 	text-align: center;
+}
+
+
+ .p_principal{
+ 	margin: auto;
+ 	color: #fff;
+ 	padding: 10px 20px;
+ 	font-size: 45px;
+ 	text-shadow: 3px 2px 2px black;
+ 	z-index: 2;
+ }
+
+ .p_secundario{
+ 	display: table-cell;
+ 	vertical-align: middle;
+ 	color: white;
+ 	padding: 15px 15px 15px 15px;
+ 	font-size: 12px;
+ 	text-shadow: 3px 2px 2px black;
+ }
+
+ .btn_reservar{
+ 	width: 30%;
+ 	height: 12%;
+ 	color: black;
+ 	background-color: #89C9B8;
+ 	border-radius: 15px;
+ 	text-align: center;
+ 	position: relative;
+ 	float: right;
+    vertical-align: middle;
+    font-weight: 600;
+ }
+
+  .btn_reservar:hover{
+ 	color: white;
+ 	border-radius: 15px;
+ 	text-align: center;
+ 	position: relative;
+    vertical-align: middle;
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: underline;
+ }
+
+ .section{
+	width: 35%;
+	height: 35%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	float: left;
+	border: solid 1px #cdcdcd;
+	border-radius: 5px;
+	overflow: hidden;
+	color: black;
+	background-color: white;
+	text-align: center;
+	 vertical-align: middle;
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width:1024px) {
+
+	 .cont_azul{
+ 	float: left;
+ 	margin-top: 10px;
+ 	top: 5px;
+ 	left: 5px;
+ 	height: 75%;
+ 	width: 100%; 
+ 	color: white;
+ 	background-color: #008891;
+ 	text-align: justify;
+ 	position: relative;
+ 	z-index: 1;
+ 	border-radius: 15px;
+ 	padding: 5px;
+}
+
+	.p_secundario{
+		font-size: 10px;
+	}
+
+	.menu{
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	color: white;
+	padding: 15px;
+	text-decoration: none;
+	width: 100%;
+}
+
+	.p_principal{
+ 	margin: auto;
+ 	color: #fff;
+ 	padding: 10px 20px;
+ 	font-size: 25px;
+ 	text-shadow: 3px 2px 2px black;
+ 	z-index: 2;
+ 	}
+
+	.cont_azul_2{
+ 	float: left;
+ 	top: 5px;
+ 	left: 5px;
+ 	height: 75%;
+ 	width: 100%; 
+ 	color: white;
+ 	background-color: #008891;
+ 	text-align: justify;
+ 	position: relative;
+ 	z-index: 1;
+ 	border-radius: 15px;
+ 	padding: 5px;
+	}
+
+	.video{
+	float: right;
+	border: 3px solid #008891;
+	border-radius: 15px;
+	width: 100%;
+	margin-top: 20px;
+	}
+
+	.playa_logo{
+	height: 15px;
+	width: 20px;
+	}
+
+	header{
+	background-color: #4B3939;
+	color: white;
+	align-items: center;
+	justify-content: space-around; 
+}
+}
+
+
+ 

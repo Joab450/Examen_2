@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>
+		Carrito
+	</title>
+	<link rel="stylesheet" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<script>
+		
+		function Delete(e){
+			let items = [];
+			JSON.parse(localStorage.getItem('items')).map(data=>{
+				if(data.id != e.parentElement.parentElement.children[0].textContent){
+					
+					items.push(data);
+
+				}
+			});
+			localStorage.setItem('items',JSON.stringify(items));
+			window.location.reload();
+		};
+	</script>
+		
+</head>
+<body>
+
+
+	<div class="main">
+		<header id="header" class="header">
+			<a style="color: white; text-decoration: none ;" class="menu" href="index.html">INICIO</a>
+				<a style="color: white; text-decoration: none ;" class="menu" href="cont.html">CONTACTOS</a>
+				<a style="color: white; text-decoration: none ;" class="menu" href="producto.html">INFORMACION TOURS</a>
+			<div class="iconShopping">
+				<p>0</p>
+				<i class="fa fa-shopping-cart"></i>
+			</div>
+		</header>
+		<div class="itemsBox">
+			<div class="item">
+				<img  class="img" src="https://media-cdn.tripadvisor.com/media/photo-m/1280/14/37/a4/37/isla-espiritu-santo.jpg">
+				<div class="itemInfo">
+					<h1>ISLA ESPÍRITU SANTO</h1>
+					<p>$<span>2,100.00</span></p>
+					<a href="#" title="add to cart" class="attToCart">RESERVAR</a>
+				</div>
+			</div>
+			<div class="item">
+				<img  class="img" src="https://alcanzandoelconocimiento.com/wp-content/uploads/2020/07/TIBURON-BALLENA.jpg">
+				<div class="itemInfo">
+					<h1>TOUR TIBURÓN BALLENA</h1>
+					<p>$<span>1,600.00</span></p>
+					<a href="#" title="add to cart" class="attToCart">RESERVAR</a>
+				</div>
+			</div>
+			<div class="item">
+				<img  class="img" src="https://1.bp.blogspot.com/-sm_m5dKSc80/Xb_MCokNVfI/AAAAAAAAfTI/b8z7fJMlzSkcHeZgNn48Uo-cfnEa48urACLcBGAsYHQ/s1600/PLAYA-BALANDRA-LA-PAZ-VIAJA-BONITO-1.jpg">
+				<div class="itemInfo">
+					<h1>SAN RAFAELITO Y BALANDRA</h1>
+					<p>$<span>2,500.00</span></p>
+					<a href="#" title="add to cart" class="attToCart">RESERVAR</a>
+				</div>
+			</div>
+
+			<div class="item">
+				<img  class="img" src="https://masdemx.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-29-at-11.49.54-PM.jpg">
+				<div class="itemInfo">
+					<h1>ISLA ESPÍRITU SANTO</h1>
+					<p>$<span>2,100.00</span></p>
+					<a href="#" title="add to cart" class="attToCart">RESERVAR</a>
+				</div>
+			</div>
+			<div class="item">
+				<img  class="img" src="https://clubsolaris.com/imgs/decretan-area-de-refugio-para-el-tiburon-ballena/tiburon-ballena-cancun.png">
+				<div class="itemInfo">
+					<h1>TOUR TIBURÓN BALLENA</h1>
+					<p>$<span>1,600.00</span></p>
+					<a href="#" title="add to cart" class="attToCart">RESERVAR</a>
+				</div>
+			</div>
+			<div class="item">
+				<img  class="img" src="https://bajades.com/images/Snorkel_San_Rafaelito/00.jpeg">
+				<div class="itemInfo">
+					<h1>SAN RAFAELITO Y BALANDRA</h1>
+					<p>$<span>2,500.00</span></p>
+					<a href="#" title="add to cart" class="attToCart">RESERVAR</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cartBox">
+		<div class="cart">
+			<i class="fa fa-close"></i>
+			<h1>Cart</h1>
+			<table></table>
+		</div>
+	</div>
+
+
+	<script src="js/index.js"></script>
+</body>
+
+<footer>Carretera al Sur KM 5.5, Apartado Postal 19-B, C.P. 23080, La Paz, Baja California Sur, México. Teléfono: (612) 12 388 00</footer>
+</html>
